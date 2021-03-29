@@ -1,0 +1,6 @@
+By default, the matcher will only return the matches and not do anything else, 
+like merge entities or assign labels. This is all up to you and can be defined individually for each pattern, 
+by passing in a callback function as the on_match argument on add(). This is useful, 
+because it lets you write entirely custom and pattern-specific logic. For example, 
+you might want to merge some patterns into one token, while adding entity labels for other pattern types. 
+You shouldn’t have to create different matchers for each of those processes
